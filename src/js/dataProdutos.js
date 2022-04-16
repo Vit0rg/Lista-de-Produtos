@@ -1,4 +1,6 @@
-const produtos = [{
+const produtos = 
+[
+    {
         nome: 'Morango 5kg',
         preco: 7,
         secao: 'Hortifruit',
@@ -6,7 +8,8 @@ const produtos = [{
         img: "./src/img/morango5k.png",
         promocao: false,
         precoPromocao: 3.50,
-        componentes: [
+        componentes: 
+        [
             'Fibras',
             'Vitamina C',
             'Cálcio',
@@ -21,7 +24,8 @@ const produtos = [{
         img: "./src/img/banana.png",
         promocao: true,
         precoPromocao: 1,
-        componentes: [
+        componentes: 
+        [
             'Potássio',
             'Vitamina B6',
             'Vitamina C',
@@ -36,7 +40,8 @@ const produtos = [{
         img: './src/img/morango.png',
         promocao: false,
         precoPromocao: 0,
-        componentes: [
+        componentes: 
+        [
             'Potássio',
             'Vitamina B6',
             'Vitamina C',
@@ -51,7 +56,8 @@ const produtos = [{
         img: './src/img/maça.png',
         promocao: true,
         precoPromocao: 1.50,
-        componentes: [
+        componentes: 
+        [
             'Potássio',
             'Vitamina A',
             'Vitamina E',
@@ -66,7 +72,8 @@ const produtos = [{
         img: './src/img/pao.png',
         promocao: true,
         precoPromocao: 2.50,
-        componentes: [
+        componentes: 
+        [
             'Cálcio',
             'Sódio',
             'Fibra Alimentar',
@@ -81,7 +88,8 @@ const produtos = [{
         img: './src/img/bolo.png',
         promocao: false,
         precoPromocao: 0,
-        componentes: [
+        componentes: 
+        [
             'Cálcio',
             'Magnésio',
             'Vitamina B3',
@@ -96,7 +104,8 @@ const produtos = [{
         img: './src/img/leite.png',
         promocao: false,
         precoPromocao: 1,
-        componentes: [
+        componentes: 
+        [
             'Carboidratos',
             'Proteínas',
             'Gorduras totais'
@@ -110,7 +119,8 @@ const produtos = [{
         img: './src/img/tortaDeMaça.png',
         promocao: false,
         precoPromocao: 0,
-        componentes: [
+        componentes: 
+        [
             'Cálcio',
             'Sódio',
             'Fibra Alimentar',

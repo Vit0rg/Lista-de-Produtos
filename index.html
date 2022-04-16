@@ -1,68 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Lista de Produtos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <script defer src="src/js/dataProdutos.js"></script>
+  <script defer src="src/js/script.js"></script>
+  <title>Lista de Produtos</title>
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div id="filters">
+  <header>
+    <menu>
+      <ul>
+        <li>Todos os produtos</li>
+        <li>Hortifruit</li>
+        <li>Panificadora</li>
+        <li>Laticínios</li>
+      </ul>
 
-            <menu class="filtersContainer">
-                <nav>
-                    <ul class="menuDeCategorias">
-                        <li>Todos os produtos</li>
-                        <li>Hortifruit</li>
-                        <li>Panificadora</li>
-                        <li>Laticínios</li>
-                    </ul>
-                </nav>
-                <div class="containerBuscaPorNome">
+      <div id="containerBuscaPorNomes">
+        <input type="text" placeholder="Pesquisar por: ">
+        <button> <img src="src/img/lupa.png"> </button>
+      </div>
+    </menu>
 
-                    <input type="text" placeholder="Pesquisar por" class="campoBuscaPorNome">
-                    <button id="inputButton" class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"><img src="src/img/lupa.png" alt="Ícone de Lupa"></button>
+    <div id="valorDosProdutos">
+      <img src="./src/img/alert-circle.png">
+      <span>Valor total dos produtos da sessão selecionada: </span>
+      <span id="precoTotal">00.00</span>
+    </div>
+  </header>
 
-                </div>
-            </menu>
+  <main>
+    <section id="containerListaProdutos">
+      <ul>
+      </ul>
+    </section>
 
+    <section id="containerCarrinho">
+    </section> 
+  </main>
 
-
-        </div>
-        <div class="valorDosProdutos">
-            <div class="containerPrecoTotal">
-                <div class="paragrafo">
-                    <img src="src/img/alert-circle.png" alt="Ícone de alerta">
-                    <p>Valor total dos produtos da sessão selecionada:</p>
-                </div>
-                <div class="span">
-                    <span id="precoTotal">00.00</span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="containerListaProdutos" id="listProdutos">
-            <ul class="produtos">
-            </ul>
-        </div>
-        <div id="carrinho" class="containerCarrinho">
-        </div>
-    </main>
-
-    <script src="src/js/dataProdutos.js"></script>
-    <script src="src/js/script.js"></script>
 </body>
 
 </html>
